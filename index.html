@@ -7,18 +7,42 @@
     <link href="css/shorby-main.css" rel="stylesheet" />
     <link href="css/shorby-page.css" rel="stylesheet" />
     <link href="css/emoji.css" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/14106/14106201.png">
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/1384/1384060.png">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.2/uicons-brands/css/uicons-brands.css'>
     <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"/>
     <meta property="og:type" content="article" />
     <meta property="og:image" content="" />
     <meta property="og:title" content="Rodrigo M. Araujo" />
+    <a rel="me" href="https://mastodon.com.br/@rodrigoaraujo"></a>
+    <meta name="fediverse:creator" content="@rodrigoaraujo@mastodon.com.br">
+
+
     
 
+  
+<style>
+  @media only screen and (max-width: 600px) {
+    .toot {
+      max-width: 95%;
+      margin: 10px auto;
+    }
 
+    header {
+      height: 200px;
+    }
 
-  </head>
+    header h1 {
+      font-size: 1.5rem;
+    }
+
+    header p {
+      font-size: 1rem;
+    }
+  }
+</style>
+
+</head>
 
   <body class="theme-default default-theme">
     <style>
@@ -33,7 +57,7 @@
       }
 
       markblue { 
-        background-color: rgb(3, 26, 62 );
+        background-color: rgb(0, 11, 100);
         color: white;
       }
 
@@ -42,95 +66,115 @@
         color: black;
       }
 
-       /* Estilizando o botão dropdown */
-       .dropdown {
-            position: absolute;
-            top: 10px;  /* Alinhando no canto superior */
-            right: 10px; /* Alinhando no canto direito */
-            display: inline-block;
-        }
 
-        .dropdown button {
-            background-color: #000; /* Botão preto */
-            color: white;
-            padding: 10px 20px;
-            font-size: 16px;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-        }
+    /* Estilo das postagens */
+    .toot {
+      max-width: 600px;
+      margin: 10px auto;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background-color: white;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      display: flex;
+    }
 
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            right: 0;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
+    .toot .toot-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
 
-        .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            text-align: left;
-        }
+    .toot .toot-avatar {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
 
-        .dropdown-content a:hover {
-            background-color: #f1f1f1;
-        }
+    .toot .toot-username {
+      font-weight: bold;
+      font-size: 14px;
+    }
 
-        .dropdown:hover .dropdown-content {
-            display: block; /* Exibe as opções quando o mouse está sobre o botão */
-        }
+    .toot .toot-content {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
 
-        .dropdown button:hover {
-            background-color: #333; /* Altera a cor ao passar o mouse */
-        }
+    .toot .toot-time {
+        font-size: 12px;
+        color: #666;
+        text-align: right; /* Data e hora à direita */
+      }
 
-      </style>
+      .toot .toot-hashtag {
+        font-size: 12px;
+        color: #666;
+        text-align: left; /* hashtag à esquerda */
+      }
 
+    .toot img {
+      width: 100%;
+      height: auto;
+      margin-top: 10px;
+      border-radius: 10px;
+    }
+
+    .toot audio, .toot video {
+      width: 100%;
+      margin-top: 10px;
+      border-radius: 10px;
+    }
+
+    .toot iframe {
+      width: 100%;
+      height: 315px;
+      margin-top: 10px;
+      border-radius: 10px;
+    }
+
+ </style>
     <script src="js/shorby.js"></script>
-    <div class="container smartpage-container">
+
+
+    
+
+<div class="container smartpage-container">
       <header>
+<!-- Botão superior -->
 
-
-        <br>
 
         
-        <li id="block0" class="links-block"><i title="" class="block-item layout-card" style="background-image:">
-          <img src="https://sun9-38.userapi.com/impg/OOjG0USoItaJ6cymJKeDmnycOOMEevCMtqRfnA/IKcXndQ1Ow0.jpg?size=1673x1649&quality=95&sign=e208957e8836ee71c97c44b6baa48a6f&type=album" class="avatar" alt="" title="Rodrigo Araujo" />
-        </i></li>
-        <div class="bio-title">
-          <h1 align="left" style="font-size: 2rem;">Rodrigo Araujo</h1>
-          <div class="bio-description">
-          <a>
-               <mark>Engenheiro Mecânico</mark>
-                <br>
-              <mark>Engenheiro de Segurança do Trabalho</mark>
-                <br>
-</a>
+
+<!-- Fim do botão -->
+<br>
+<br>
+<!-- Início do  -->
+
+<img src="https://sun9-38.userapi.com/impg/OOjG0USoItaJ6cymJKeDmnycOOMEevCMtqRfnA/IKcXndQ1Ow0.jpg?size=1673x1649&quality=95&sign=e208957e8836ee71c97c44b6baa48a6f&type=album" class="avatar" alt="" title="Rodrigo Araujo" />
+<p align="center" style="font-size: 1.5rem; color: rgb(0, 0, 0);"><b>Rodrigo Araujo</b>
+<br>
+<small style="font-size: 0.9rem; color: gray;">pense menos, aja mais, viva melhor</small></p>
 <br>
 
-<img src="https://img.shields.io/badge/%F0%9F%AB%85%F0%9F%8F%BB%20Lorde%20de%20Sealand-222222"></a>
-<br>
-<img src="https://img.shields.io/badge/%F0%9F%93%8D%20Bel%C3%A9m%20do%20Par%C3%A1-222222"></a>
+<!-- Fim do botão -->
 
 
-          </div>
-        </div>
-      </header>
-      <br>
-        <div class="powered-by-shorby">
-          <a>feito pelo <strong>rodrigo</strong>
-          </a>
-        </div>
-      </header>
+<!-- Área onde as postagens aparecerão -->
+
+  <br>
+  <br>
+
+<!-- rodapé-->
+ <center>
+<small><a>feito pelo <strong>Rodrigo</strong></small></a>
+</center>
+<!-- fim do rodapé-->
+
+<!-- fim-->
 </div>
-
 </div>
-  </div>
+</div>
 </body>
 </html>
