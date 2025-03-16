@@ -1,51 +1,25 @@
 <!DOCTYPE html>
 <html lang="br">
-  <head>
-    <meta charSet="utf-8" />
-    <meta name="viewport" content="user-scalable=no,width=device-width,initial-scale=1" />
-    <title>rodrigoaraujoxyz</title>
-    <link href="css/shorby-main.css" rel="stylesheet" />
-    <link href="css/shorby-page.css" rel="stylesheet" />
-    <link href="css/emoji.css" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/1384/1384060.png">
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.2/uicons-brands/css/uicons-brands.css'>
-    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"/>
-    <meta property="og:type" content="article" />
-    <meta property="og:image" content="" />
-    <meta property="og:title" content="Rodrigo M. Araujo" />
-    <a rel="me" href="https://mastodon.com.br/@rodrigoaraujo"></a>
-    <meta name="fediverse:creator" content="@rodrigoaraujo@mastodon.com.br">
-
-
-    
-
-  
-<style>
-  @media only screen and (max-width: 600px) {
-    .toot {
-      max-width: 95%;
-      margin: 10px auto;
-    }
-
-    header {
-      height: 200px;
-    }
-
-    header h1 {
-      font-size: 1.5rem;
-    }
-
-    header p {
-      font-size: 1rem;
-    }
-  }
-</style>
+<head>
+<meta charSet="utf-8" />
+<meta name="viewport" content="user-scalable=no,width=device-width,initial-scale=1" />
+<title>Rodrigo M. Araujo</title>
+<link href="css/shorby-main.css" rel="stylesheet" />
+<link href="css/shorby-page.css" rel="stylesheet" />
+<link href="css/emoji.css" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/14106/14106201.png">
+<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.2/uicons-brands/css/uicons-brands.css'>
+<link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"/>
+<meta property="og:type" content="article" />
+<meta property="og:image" content="" />
+<meta property="og:title" content="Rodrigo Araujo" />
+   
 
 </head>
 
-  <body class="theme-default default-theme">
-    <style>
+<body class="theme-default default-theme">
+<style>
             mark { 
         background-color: black;
         color: white;
@@ -57,7 +31,7 @@
       }
 
       markblue { 
-        background-color: rgb(0, 11, 100);
+        background-color: rgb(3, 26, 62 );
         color: white;
       }
 
@@ -66,211 +40,92 @@
         color: black;
       }
 
+       /* Estilizando o botão dropdown */
+       .dropdown {
+            position: absolute;
+            top: 10px;  /* Alinhando no canto superior */
+            right: 10px; /* Alinhando no canto direito */
+            display: inline-block;
+        }
 
-    /* Estilo das postagens */
-    .toot {
-      max-width: 600px;
-      margin: 10px auto;
-      padding: 15px;
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      background-color: white;
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-      display: flex;
-    }
+        .dropdown button {
+            background-color: #000; /* Botão preto */
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
 
-    .toot .toot-header {
-      display: flex;
-      align-items: center;
-      margin-bottom: 10px;
-    }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
 
-    .toot .toot-avatar {
-      width: 32px;
-      height: 32px;
-      border-radius: 50%;
-      margin-right: 10px;
-    }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
 
-    .toot .toot-username {
-      font-weight: bold;
-      font-size: 14px;
-    }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
 
-    .toot .toot-content {
-      font-size: 16px;
-      margin-bottom: 10px;
-    }
+        .dropdown:hover .dropdown-content {
+            display: block; /* Exibe as opções quando o mouse está sobre o botão */
+        }
 
-    .toot .toot-time {
-        font-size: 12px;
-        color: #666;
-        text-align: right; /* Data e hora à direita */
-      }
+        .dropdown button:hover {
+            background-color: #333; /* Altera a cor ao passar o mouse */
+        }
+</style>
 
-      .toot .toot-hashtag {
-        font-size: 12px;
-        color: #666;
-        text-align: left; /* hashtag à esquerda */
-      }
-
-    .toot img {
-      width: 100%;
-      height: auto;
-      margin-top: 10px;
-      border-radius: 10px;
-    }
-
-    .toot audio, .toot video {
-      width: 100%;
-      margin-top: 10px;
-      border-radius: 10px;
-    }
-
-    .toot iframe {
-      width: 100%;
-      height: 315px;
-      margin-top: 10px;
-      border-radius: 10px;
-    }
-
- </style>
-    <script src="js/shorby.js"></script>
-
-
-    
-
+<script src="js/shorby.js"></script>
 <div class="container smartpage-container">
-      <header>
-<!-- Botão superior -->
-
-
-        
-
-<!-- Fim do botão -->
+<header>
+<li id="block0" class="links-block"><i title="" class="block-item layout-card" style="background-image:">
+<img src="https://sun9-47.userapi.com/impg/_EJ8pQhR2MKCS2kehHukaVhaf2Kn3jJOqYY3iw/Pvf-7mzHbmA.jpg?size=1080x1080&quality=95&sign=9aa4c2619fd844d0800962ba70b98e09&type=album" class="avatar" alt="" title="Rodrigo Araujo" />
+</i> 
+<div class="bio-title">
+<h1 align="left" style="font-size: 1.9rem;">Rodrigo M. Araujo</h1>
+<div class="bio-description">
+<a>
+CEO @ <b>BENWIL Engineering LTD</b>
 <br>
-<!-- Início do  -->
-
-<img src="https://sun9-62.userapi.com/impg/W4ouZ6ccMaQQJG4HcXWEYZjpTylhVsa5vAbEvg/c5QYpCmd2A8.jpg?size=768x758&quality=96&sign=ba3987f390bc2200787575fb8c9e4a3b&type=album" class="avatar" alt="" title="Rodrigo Araujo" />
-<p align="center" style="font-size: 1.5rem; color: rgb(0, 0, 0);"><b>Rodrigo Araujo</b>
+Founder @ <b>engenheiro.org LLC</b>
 <br>
-<small style="font-size: 0.9rem; color: rgb(255, 0, 0);"> <b>That's All Folks</b></small></p>
-
-<!-- Fim do botão -->
-
-
-<!-- Área onde as postagens aparecerão -->
-
+Engenheiro Mecânico
 <br>
-
-<div class="toot">
-  <div>
-
-    <div class="toot-content" style="font-size: 0.9rem; color: gray;">A turma do vôlei só ta crescendo</div>
-    <img src="https://sun9-49.userapi.com/impg/RLRN37qJYkTp4zYFujtDyvxdVMoEzbY37xDbtg/GlrShovo1dE.jpg?size=907x1209&quality=96&sign=ee54763683849c88f768c800a4c034ea&type=album">
-    <div class="toot-time">09/02/2025, 12:37</div>
-
-  </div>
+Engenheiro de Segurança do Trabalho
+<br>
+<SMALL><B>Especialista em Qualidade e Melhoria Contínua</B></SMALL>
+</a>
+</div>
+</div>
+<div class="powered-by-shorby">
+<small align="center" style="font-size: 0.8rem; color: gray;"><b>BENWIL Engineering LTD</b></small>
+<br>
+<small align="center" style="font-size: 0.8rem; color: gray;">128 City Road EC1V 2NX, London, UK</small>
+<br>
+<small align="center" style="font-size: 0.8rem; color: gray;"><b>engenheiro.org LLC</b></small>
+<br>
+<small align="center" style="font-size: 0.8rem; color: gray;">108 W 13th St, Wilmington, DE 19801, USA</small>
+<br>
+<i class="em em-flag-br" aria-role="presentation" aria-label="Brazil Flag"></i> <i class="em em-us" aria-role="presentation" aria-label="United States Flag"></i> <i class="em em-gb" aria-role="presentation" aria-label="United Kingdom Flag"></i> 
+</a>
+</div>
 </div>
 
-
-<div class="toot">
-  <div>
-
-    <div class="toot-content" style="font-size: 0.9rem; color: gray;">até que fiquei bacana</div>
-    <img src="https://sun9-8.userapi.com/impg/3ERX_KMTC20FfWJdD9rFH0VFZhpap2hdjIYAlg/8tJotOyKR6o.jpg?size=552x736&quality=96&sign=9fa516054143d0a7c7c386a437ca9a3c&type=album">
-
-
-  </div>
-</div>
-
-
-<div class="toot">
-  <div>
-
-    <div class="toot-content" style="font-size: 0.9rem; color: gray;">Voleizinho maroto</div>
-    <img src="https://sun9-68.userapi.com/impg/gV4pfdb8DDt9D3SSeJcF2y71_xDjMWm9qdkImA/0lLBLTrLcQI.jpg?size=633x541&quality=96&sign=5831d6506c1c3016e513a8d64cded281&type=album">
-    <div class="toot-time">02/02/2025, 11:21</div>
-
-  </div>
-</div>
-
-<div class="toot">
-  <div>
-
-    <div class="toot-content" style="font-size: 0.9rem; color: gray;">dupla certificação: engenheiro mecânico e engenheiro de segurança do trabalho</div>
-    <img src="https://sun9-3.userapi.com/impg/8MNcFw7FsgekhfUHJhumaUWqiXir7HLixh5a-w/DsLnBkevcCM.jpg?size=1580x2040&quality=96&sign=f7c0159bdb0acd1a21264f6953df6caf&type=album">
-
-
-  </div>
-</div>
-
-
-<div class="toot">
-  <div>
-
-    <div class="toot-content" style="font-size: 0.9rem; color: gray;">1ª vez que usei laranja</div>
-    <img src="https://sun9-61.userapi.com/impg/NlszAuOqCikaKT2MQyKJLnOKeQAqcu7-6ilO2w/X1dmnwC5yIA.jpg?size=662x884&quality=96&sign=7d65ef56ddd2af8e4a84fdf7482c3ea7&type=album">
-
-
-  </div>
-</div>
-
-
-<div class="toot">
-  <div>
-
-    <div class="toot-content" style="font-size: 0.9rem; color: gray;">tô fazendo possível pra ficar gostoso</div>
-    <img src="https://sun9-50.userapi.com/impg/5IDcBR1LN1M61RpticnxuHf5V54XyazKcXBtCw/WohcrYeuXEE.jpg?size=576x768&quality=96&sign=bf5ffe279a3d5caea56c4ab63baed330&type=album">
-
-
-  </div>
-</div>
-
-<div class="toot">
-  <div>
-
-    <div class="toot-content" style="font-size: 0.9rem; color: gray;">meu irmão. te amo, doutor.</div>
-    <img src="https://sun9-78.userapi.com/impg/_jsEdcOftAlN4TMcZEn8T6FtXGKMzOEYPC3X5g/94LZ3s2BHcc.jpg?size=1104x1472&quality=96&sign=b44dd7f395d085b375435620991b4bd4&type=album">
-
-
-  </div>
-</div>
-
-
-
-  <div class="toot">
-    <div>
-  
-      <div class="toot-content">😊</div>
-      <img src="https://sun9-8.userapi.com/impg/ILLYbAQIunfG03u04itImcQephnp3oJiiTA-sA/Abz2ee7IY0I.jpg?size=830x1280&quality=95&sign=7a68155cf1e8ed4c95855d16d33ea5fc&type=album">
-      <div class="toot-time">17/10/2024, 18:09</div>
-  
-    </div>
-  </div>
-  
-  <div class="toot">
-    <div>
-  
-      <div class="toot-content" style="font-size: 0.9rem; color: gray;">meu irmão, minha avó ❤️</div>
-      <img src="https://sun9-30.userapi.com/impg/UjNAcj6myXq_yTcc5bES-SKfDXzYvXzG1Te0yQ/eV2ckPfl1Fc.jpg?size=1620x2160&quality=96&sign=57889d7db337b6b6e44ab7735a0c4f2a&type=album">
-      <div class="toot-time">06/01/2024, 12:09</div>
-  
-    </div>
-  </div>
-
-
-    <br>
-    <br>
-
-<!-- rodapé-->
- <center>
-<small><a>feito pelo <strong>Rodrigo</strong></small></a>
-</center>
-<!-- fim do rodapé-->
-
-<!-- fim-->
-</div>
+</header>
 </div>
 </div>
 </body>
