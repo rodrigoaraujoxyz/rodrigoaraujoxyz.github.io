@@ -58,7 +58,7 @@ class Gerador {
     for (let item of lista) {
       this.listaBase.push(new CasaCartela(item.trim()));
     }
-    imagem = imagem ? imagem : "np.png";
+    imagem = imagem ? imagem : "imagens/np.png";
     this.casaImagem = new CasaCartela(null, imagem);
   }
 
